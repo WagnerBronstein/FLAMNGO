@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.caralho {
+    padding: 2% 0% 0% 10%;
+}
+
+.caralho__menu {
+    display: flex;
+    gap: 60px;
+}
+
+.caralho__menu__link {
+    font-family: 'Pixelify Sans', cursive;
+    color: var(--cor-terciaria);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.FLAMENGO {
+    color: var(--cor-terciaria);
+}
+
+.estilo {
+    padding: 6% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.estilo__conteudo {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.estilo__conteudo__titulo {
+    font-size: 2.25rem;
+    height: 50%;
+    font-family: 'Pixelify Sans', cursive;
+
+}
+
+.estilo__conteudo__texto{
+    font-size: 1.06rem;
+    font-family: 'Pixelify Sans', cursive;
+    padding: 17px 0;
+    height: 50%;
+}
+
+.subititulo {
+    font-family: 'Pixelify Sans', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 0.93rem;
+    padding: 12px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: 'Pixelify Sans', cursive;
+    margin-right: 15px;
+    border: 2px solid var(--cor-terciaria);
+    gap: 16px;
+}
+
+.estilo__botao {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.botao:hover {
+    background-color: red;
+    padding: 3%;
+}
+
+.imagem {
+    width: 50%;
+}
+
+.rodape {
+    color:var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    font-family: 'Pixelify Sans', cursive;
+    padding: 24px;
+    text-align-last: center;
+    font-size: 1.12rem;
+}
+
+@media (max-width: 1040px) {
+   
+   .caralho {
+    padding: 7%;
+   }
+
+   .caralho__menu {
+    justify-content: center;
+   }
+   
+    .estilo {
+    
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .estilo__conteudo {
+        width: auto;
+    }
+}
